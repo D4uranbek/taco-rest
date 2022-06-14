@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1111
+    url: jdbc:postgresql://localhost:5432/taco_cloud?currentSchema=taco
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  data:
+    rest:
+      base-path: /data-api
